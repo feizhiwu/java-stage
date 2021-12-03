@@ -7,7 +7,7 @@ RESTful架构，结构清晰，传参灵活
 ```
 java:
     plugin（常用工具类）
-resoureces:
+resources:
     config.yaml（统一环境配置文件）
     message.yaml (统一状态码配置文件）
 ```
