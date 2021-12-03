@@ -1,8 +1,9 @@
-#stage
+# stage
 springboot+mybatis 面向接口（api）简易小demo，初学者也能快速上手
 
 RESTful架构，结构清晰，传参灵活
-##目录结构
+
+### 目录结构
 ```
 java:
     plugin（常用工具类）
@@ -10,7 +11,7 @@ resoureces:
     config.yaml（统一环境配置文件）
     message.yaml (统一状态码配置文件）
 ```
-##RESTful API curl
+### RESTful API curl
 ```
 添加用户：
 curl --location --request POST 'http://localhost:8080/v1/user' \
@@ -48,7 +49,7 @@ curl --location --request DELETE 'http://localhost:8080/v1/user' \
 ```
 注：一个router下的header action不允许重复！控制器通过action定位方法，联调时也可以通过action快速定位接口
 
-##返参示例
+### 返参示例
 ```
 {
     "status": 10000,
@@ -57,7 +58,7 @@ curl --location --request DELETE 'http://localhost:8080/v1/user' \
 }
 ```
 
-##测试user表结构
+### 测试user表结构
 ```
 CREATE TABLE `user` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
