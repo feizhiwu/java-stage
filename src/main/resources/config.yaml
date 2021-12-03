@@ -1,0 +1,9 @@
+dev:
+  salt: 8d83e248348db11e676907d879d4e1e1
+
+test:
+  salt: 8d83e248348db11e676907d879d4e1e1
+
+prod:
+  salt: 8d83e248348db11e676907d879d4e1e1
+

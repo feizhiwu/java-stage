@@ -1,0 +1,20 @@
+server:
+  port: 8008
+spring:
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
+mybatis:
+  type-aliases-package: com.stage.model
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  config-location: classpath:mybatis/mybatis.config.xml
+logging:
+  file:
+    path: /home/java/log/brain
+  pattern:
+    console: '%d{yyyy/MM/dd-HH:mm:ss} [%thread] %-5level %logger - %msg%n'
+    file: '%d{yyyy/MM/dd-HH:mm} [%thread] %-5level %logger - %msg%n'
+  level:
+    com.stage.mapper: info
